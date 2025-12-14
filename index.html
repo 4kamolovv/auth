@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Firebase Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./auth.css">
 </head>
 <body>
-
-  <h1>Salom 👋</h1>
-  <p>Bu mening Firebase login sahifam</p>
-
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyAPXxtI1sXQvEAuDBPhfRxvKKKBrWPeIEo",
-    authDomain: "login-f3dac.firebaseapp.com",
-    projectId: "login-f3dac",
-    storageBucket: "login-f3dac.firebasestorage.app",
-    messagingSenderId: "258979847774",
-    appId: "1:258979847774:web:704aa42eaae376bd541ecf"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  console.log("Firebase ulandi ✅");
-</script>
-
+    <section class="auth">
+        <div class="container">
+            <div class="wrapper">
+                <div class="auth-box">
+                  <a class="ahref" href="./login.html">login</a>
+                  <a class="ahref" href="./signup.html">signup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="./login.js"></script>
+    
 </body>
 </html>

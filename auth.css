@@ -107,6 +107,9 @@ body {
 .remember-forgot a:hover {
   color: var(--accent);
 }
+.ahref {
+  color: var(--accent);
+}
 
 /* BUTTON */
 .auth-box button {

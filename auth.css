@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: var(--cl-1);
+}
+
+/* ROOT VARIABLES — HAMMASI ISHLATILADI */
+:root {
+  --cl-1: #ffffff;
+  --cl-2: #cfd8dc;
+
+  --accent: #4da3ff;
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.18);
+
+  --border-radius: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0b1320;
+  background-image: url("../images/backgrounds/backgrouns.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* AUTH LAYOUT */
+.auth {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLASS CARD */
+.wrapper {
+  width: 330px;
+  padding: 22px 30px;
+  background: var(--glass-bg);
+  border: var(--glass-border);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(12px);
+}
+
+/* TITLE */
+.auth-box h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* INPUTS */
+.input-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-icon label {
+  font-size: 0.9rem;
+  color: var(--cl-2);
+  margin-bottom: 4px;
+}
+
+.input-box input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
+  outline: none;
+  padding: 6px 4px;
+  font-size: 0.95rem;
+  color: var(--cl-1);
+  margin-bottom: 22px;
+  transition: border-color 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: var(--accent);
+}
+
+.inp-30 {
+  margin-bottom: 8px !important;
+}
+
+/* FORGOT */
+.remember-forgot a {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.85rem;
+  color: var(--cl-2);
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  color: var(--accent);
+}
+
+/* BUTTON */
+.auth-box button {
+  width: 100%;
+  height: 38px;
+  margin-top: 14px;
+
+  background: rgba(77, 163, 255, 0.15);
+  border: 1px solid rgba(77, 163, 255, 0.35);
+  border-radius: var(--border-radius);
+
+  color: var(--cl-1);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.auth-box button:hover {
+  background: var(--accent);
+  color: #0b1320;
+}
+
+/* LINKS */
+.register-link {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.register-link a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* TOGGLE PASSWORD */
+.toggle-password {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--cl-2);
+}
+
+.toggle-password:hover {
+  color: var(--accent);
+}

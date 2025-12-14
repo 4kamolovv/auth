@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./auth.css">
+</head>
+<body>
+    <section class="auth">
+        <div class="container">
+            <div class="wrapper">
+                <div class="auth-box">
+                    <form id="signup-form">
+                        <h2>Sign Up</h2>
+                        
+                        <div class="input-box">
+                            <span class="auth-icon">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <label for="signup-email">Email</label>
+                            </span>
+                            <input id="signup-email" type="email" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="auth-icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <label for="signup-username">Username</label>
+                            </span>
+                            <input id="signup-username" type="text" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="auth-icon">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <label for="signup-password">Password</label>
+                            </span>
+                            <input id="signup-password" class="inp-30" type="password" maxlength="12" required>
+                        </div>
+                        
+                        <button id="signup-button" type="submit">Register</button>
+                        
+                        <div class="register-link">
+                            <p>Have an account? <a href="./login.html">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="./signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Confirmation Code</title>
+    <link rel="stylesheet" href="./auth.css">
+</head>
+<body> 
+    <section class="auth">
+        <div class="container">
+            <div class="wrapper">
+                <div class="auth-box">
+                    <form id="confirm-form">
+                        <h2>Enter Confirmation Code</h2>
+                        
+                        <div class="input-box">
+                            <span class="auth-icon">
+                                <ion-icon name="key-outline"></ion-icon>
+                                <label for="confirm-code">Code</label>
+                            </span>
+                            <input id="confirm-code" class="inp-30" type="text" required>
+                        </div>
+                        
+                        <button id="confirm-button" type="submit">Confirm</button>
+                        
+                        <div class="register-link">
+                            <p>Remembered your password? <a href="./login.html" >Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./auth.js"></script>
+</body>
+</html>
